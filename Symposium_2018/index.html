@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Urban Mobility Challenges II</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.4/leaflet.js"></script>
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.4/leaflet.css" />
+
+</head>
+<style>
+#map {widh: 50px;height: 580px;}
+.auto-style1 {
+	font-size: small;
+}
+.MsoNormal1 {
+
+	margin-left:15px;
+	margin-bottom: 0px;
+	}
+}
+.auto-style2 {
+	color: #FDD400;
+}
+.auto-style4 {
+		padding: 5px 5px 5px 0px;
+
+/*	background-color: #ffe76a; */
+}
+
+.auto-style7 {
+		padding: 5px 5px 5px 0px;
+
+
+	/* background-color: white; */
+	margin-bottom:15px;
+
+}
+
+.boto {
+    border-radius: 25px;
+    background: #ffe76a;
+    padding: 4px 8px 4px 8px;
+   width:280px;
+   height:30px;
+   color:black;
+   font-size:14px;
+
+
+	}
+
+.auto-style5 {
+	color: #161614;
+}
+
+.auto-style9 {
+	color: #0000FF;
+}
+
+.auto-style10 {
+	color: #4A4AB7;
+}
+
+.auto-style11 {
+	background-color: #FFE76A;
+	padding-left:4px;
+}
+.auto-style12 {
+	background-color: #FFFFFF;
+	padding-left:4px;
+}
+.auto-style13 {
+
+}
+
+.auto-style14 {
+	font-size: 16px;
+}
+#register:hover{
+
+background-color:#689caa !important;
+	}
+
+.auto-style15 {
+	color: #D9534F;
+}
+.auto-style16 {
+	margin-left: 15px;
+	margin-bottom: 0px;
+	text-align: left;
+}
+
+</style>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" style="color:#FDD400; font-size: 1.3em;">SYMPOSIUM</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Organizers</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Agenda</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Location</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in" style="color:#FDD400">Symposium on</div>
+                <div class="intro-heading" style="color:#FDD400; margin-bottom: 5px;">"Urban Mobility challenges"</div>
+
+
+                <!--<a href="#register" class="page-scroll btn btn-xl">Free Registration</a>-->
+				<div class="intro-heading" style="font-size:26px;margin-top:10px;text-align:center">
+					<span class="auto-style2">1<span lang="es">3</span><span style="font-size:18px;">th</span>
+					November 201</span><span lang="es" class="auto-style2">7<br></span>
+
+
+	</div>
+            </div>
+        </div>
+    </header>
+	<section id="about" class="bg-light-gray" style="padding-top:30px !important">
+	<div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="margin-bottom:20px !importants">
+					<span lang="es">Mobility-As-a-service</span></h2>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+	</section>
+		<section id="about" class="bg-light-gray" style="padding-top:30px !important">
+	<div class="container">
+	<div>
+	</div>
+			<div style="text-align:justify">
+				<p class="MsoNormal"><span>In 2007 half the world’s population
+				lived in cities; by 2050 it is expected that two-thirds will.
+				According to Arthur D . Little, a consultancy, urban journeys
+				already account for nearly two-thirds of all kilometres
+				travelled by people. On current trends urban distance travelled
+				each year will have trebled by 2050, and the average time urban
+				drivers spend languishing in traffic jams is set to double to
+				106 hours a year.<o:p></o:p></span></p>
+				<p class="MsoNormal"><span>The traditional policy responses to
+				congestion<span lang="es"> </span>—build more roads and expand public transport—<span lang="es">
+				</span>are too
+				expensive for these cash-strapped times. Hence<span lang="es">,</span> the appeal to
+				urban planners of the idea of travellers combining existing
+				mass-transit schemes with a growing variety of private mobility
+				services. It offers a way to <strong>attract private capital into public
+				transport</strong>. By enabling a closer link between supply and demand
+				it will make mass <strong>transport more efficient</strong>. Congestion at peak
+				hours will fall as travellers are diverted from crowded routes
+				to less<span lang="es"> </span>packed ones; varying prices by time of day could help
+				here too.<o:p></o:p></span></p>
+				<p class="MsoNormal"><span>As well as commuters’ lives, cities
+				wil<span lang="es">l also</span> <span lang="es">be </span>transformed. With fewer cars and parking spaces
+				needed, they can be redesigned to be more pedestrian-friendly
+				and to have more green spaces. Quicker journeys will increase
+				the catchment area for job-seekers prepared to travel to work.<o:p></o:p></span></p>
+				<p class="MsoNormal"><span>There is uncertainty as to how the
+				MaaS marketplace will develop; MaaS offerings may take many
+				forms and be marketed to different types of customer. Providing
+				mobility using MaaS may result in consumers deciding <strong>they no
+				longer need to own a car</strong>. It may also have other consequences,
+				such as <strong>increasing the number of journeys or leading to
+				mode-shift away from public transport</strong>. This <strong>
+				<em>symposium</em></strong> will show
+				what MaaS could look like from the perspective of the customer.
+				It then identi<span lang="es">fies</span> the stakeholders that are needed to deliver
+				it and the benefits that MaaS could provide to different
+				stakeholders.<o:p></o:p></span></p>
+				<p class="MsoNormal"><span><strong>MaaS offers an opportunity to improve
+				how people and goods move</strong>, both from the perspective of the
+				policy maker and f<span lang="es">rom the</span> travellers themselves.</span></p>
+
+			</div>
+    </div>
+
+
+
+
+
+
+	</section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container tal">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="margin-bottom:50px;">Organizers</h2>
+                </div>
+            </div>
+
+            <div style="width:100%; max-height:92px">
+
+
+
+           		<table style="width: 100%">
+					<tr>
+						<td style="width:25%"><a href="https://www.upc.edu/?set_language=en" target="_blank"><img src="img/organizers/UPC.png" class="img-responsive" style="max-height:80%; padding-left:10px; padding-right:10px " alt=""></a></td>
+						<td style="width:25%"> <a href="http://www.carnetbarcelona.com/" target="_blank"><img src="img/organizers/carnet.png" class="img-responsive" style="max-height:80%;margin-top:8px; ; padding-left:10px; padding-right:10px;float :center" alt=""></a>
+</td>
+						<td style="width:25%">  <a href="https://www.tu-braunschweig.de/forschung/zentren/nff" target="_blank"><img src="img/organizers/NFF.jpg" class="img-responsive" style="max-height:80%; float:right;padding-left:10px; padding-right:10px" alt=""></a>
+</td>
+
+						<td style="width:25%">  <a href="http://BARCELONA.CAT" target="_blank"><img src="img/organizers/ajt.jpg" class="img-responsive" style="max-height:80%; float:right;padding-left:10px; padding-right:10px" alt=""></a>
+</td>
+
+					</tr>
+				</table>
+
+
+
+
+
+            </div>
+         </div>
+    </section>
+
+
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="margin-bottom:50px;">Agenda<span lang="es">
+					AND PRESENTATIONS</span></h2>
+                </div>
+            </div>
+			<div style="margin-left:auto;margin-right:auto;max-width:780px;">
+			<p>&nbsp;</p>
+				<p class="auto-style11"><span><strong>9:30h. Welcome &amp; Reception</strong></span></p>
+				<p class="auto-style13"><span><strong>
+				<span class=""><span lang="es">&nbsp; </span>10:00h. Opening Session</span></strong><o:p></o:p></span></p>
+				<p class="MsoNormal1"><span>
+				<o:p>•<span lang="es">&nbsp;Persona 1, Cargo 1</o:p>
+				</span></p>
+				<p class="MsoNormal1">• Persona 2, Cargo 2</p>
+				<p class="MsoNormal1">• Persona 3, Cargo 3</p>
+				<hr>
+				<p class="auto-style11"><![if !supportLists]><span>
+				<span class="auto-style11">1</span><strong><span class="auto-style11">0:</span></strong></span><![endif]><span><strong><span class="auto-style11">20h. Keynote Speaker</span></strong> <!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 1 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum 0 0 @1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @2 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @3 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @0 0 1" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @6 1 2" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelWidth" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @8 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="prod @7 21600 pixelHeight" xmlns:v="urn:schemas-microsoft-com:vml"/>
+  <v:f eqn="sum @10 21600 0" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" xmlns:v="urn:schemas-microsoft-com:vml"/>
+ <o:lock v:ext="edit" aspectratio="t" xmlns:o="urn:schemas-microsoft-com:office:office"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:294pt;
+ height:12pt'>
+ <v:imagedata src="../../AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg"
+  o:title="" xmlns:v="urn:schemas-microsoft-com:vml"/>
+</v:shape><![endif]--><o:p></o:p></span></p>
+				<p class="auto-style16"><![if !supportLists]><span>•
+				</span><![endif]><span>Persona 4, Cargo 4<o:p><span lang="es"> Download his presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></span></o:p></span></p>
+				<hr>
+				<div class="auto-style4" >
+				<p class="auto-style11"><span><strong>
+				<span class="auto-style11">10:40h. Round Table I: Título</span></strong><o:p></o:p></span></p>
+					<p class="MsoNormal1"><span><em>Moderator: Persona 5, Cargo 5</em><o:p></o:p></span></p>
+				<p class="MsoNormal1"><![if !supportLists]><span>•
+				</span><![endif]>&nbsp;<span lang="es">Persona 6, Cargo 6<span><o:p> Download his
+				presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p></span></span></p>
+
+				<p class="MsoNormal1"><![if !supportLists]><span>•
+				</span><![endif]><span><span lang="es">&nbsp;Persona 7</span>, Cargo 7</span>
+				<span lang="es"><!--ERTICO.--> </span><span>
+				<o:p><span lang="es"> Download his presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></span></o:p></span></p>
+				<p class="MsoNormal1"><![if !supportLists]><span>•
+				</span><![endif]><span>Persona 8, <span lang="es">Cargo 8
+				</span><!-- at Universitat Politècnica de Catalunya --><span lang="es">.<o:p> Download
+				his presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p></span></span></p>
+				</div>
+				<hr>
+				<p class="auto-style11"><span><strong>
+				<span class="auto-style11">11.30h. Coffee Pause</span></strong><o:p></o:p></span></p>
+
+				<hr>
+
+				<div class="auto-style4">
+				<p class="auto-style11"><span><strong>11:40h. Round Table II: Title</strong><o:p></o:p></span></p>
+				<p><span><em>Moderator: Persona 9, Cargo 9</em><o:p></o:p></span></p>
+				<p class="MsoNormal1"><![if !supportLists]><span>•&nbsp;</span><![endif]><span>Persona 10, Cargo 10 <!-- Travel
+				at Comtrade Digital Services--><o:p><span lang="es"> Download his
+				presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p></span></span></p>
+				<p class="MsoNormal1"><![if !supportLists]><span>•&nbsp;</span><![endif]><span>Persona 11, Cargo 11<o:p><o:p><span lang="es">
+				Download his presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p></span></o:p></span></p>
+				<p class="MsoNormal1"><![if !supportLists]><span>•
+				</span><![endif]>Persona 12, Cargo 12<span lang="es">.
+				<o:p> Download his presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p></span></p>
+
+				</div>
+				<hr>
+				<p class="auto-style11"><span><strong>12.30h. Coffee Pause</strong><o:p></o:p></span></p>
+
+					<hr style="height: -42px">
+
+					<div class="auto-style4">
+
+				<p class="auto-style11"><span><strong>12:40h.  Título<span lang="es"></span><!-- (NFF  - Automotive Research Centre Niedersachsen)--></strong></span></p>
+				<p class="auto-style1"><span><em><span class="auto-style14">Moderator: Persona 13, Cargo 13<span lang="es">
+				</span>
+				</span>
+</em></span></p>
+				<p class="MsoNormal1" style="margin-bottom:5px;"><span><strong>1)     Titulo_negrita 1
+				</strong>
+				<br><span lang="es">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>Persona 14, Cargo 14</o:p><span lang="es">.
+				<o:p>Download her presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p> </span></span></p>
+				<p class="MsoNormal1"style="margin-bottom:5px;"><![if !supportLists]><span><strong>2)     Titulo_negrita 2</strong><br>
+				<span lang="es">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>Persona 15, Cargo 15</o:p><span lang="es">.
+				<o:p>Download his presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p> </span></span></p>
+				<p class="MsoNormal1"style="margin-bottom:5px;"><![if !supportLists]><span><strong>3)      Titulo_negrita 3</strong><br>
+				<span lang="es">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</span>Persona 16, Cargo 16</o:p><span lang="es">.
+				<o:p>Download his presentation<span class="auto-style15"><strong>
+				</strong></span>
+				<a class="auto-style15" href="#">
+				<strong>following this link.</strong></a></o:p> </span></span></p>
+
+				</div>
+				<hr>
+
+				<p class="auto-style11"><span><strong>13:30h. Closure</strong><o:p></o:p></span></p>
+				<div class="auto-style7">
+				<p class="auto-style12"><span><strong>13:30h – 15:00h. OPEN SPACE FOR
+				DOCTORATES IN FUTURE MOBILITY</strong><o:p></o:p></span></p>
+				<p class="MsoNormal"><span>Presentations of posters (2xA0) and
+				possible prototypes in the form of open Market-Place-Forum To
+				enter into discussion and personal contact<span lang="es"><o:p>.<br>
+				<strong>If you are a doctorate and you want to participate in
+				our event, please,</strong><strong><a href="https://goo.gl/forms/NBre2vEOfrUbtmfW2">
+				</a><span class="auto-style9">
+				<a href="https://goo.gl/forms/NBre2vEOfrUbtmfW2" style="text-decoration:underline !important; " class="auto-style10">fill this form</a></span>
+				before the 30th of October.</strong></o:p></span></span></p>
+				 	</div>
+            	<hr>
+
+            	<div style="width:100%; float:center; text-align:center">
+
+<div style="float:center; text-align:center; margin-bottom:15px;"><a href="agenda.pdf"><span class="boto">Download the Agenda PDF</span> </a></div>
+<!--
+<div style="float:center; text-align:center"><a href="http://www.cit.upc.edu/symposium2016/#portfolio">
+	<span class="auto-style5" >Agenda and Presentations (November 2016)</span></a><span class="auto-style5"><a href="agenda.pdf"> </a>
+	</span></div>
+<div style="float:center; text-align:center"><a href="http://www.cit.upc.edu/symposium2015/#portfolio">
+	<span class="auto-style5" >Agenda and Presentations (November 2015)</span> </a></div>
+	-->
+   </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Location</h2>
+                </div>
+				<b><p style="text-align:center;">Escola Tècnica Superior d'Enginyeria de Camins, Canals i Ports de Barcelona,</p></b>
+				<b><p style="text-align:center;">C/ Jordi Girona 1-3, edifici C2, Conference Hall / Sala d'Actes</p></b>
+            </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11972.586441341935!2d2.116558098951075!3d41.39262233146831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4985168405cad%3A0xc5a4615be64dfb19!2sESCOLA+TECNICA+SUPERIOR+D&#39;ENGINYERS+DE+CAMINS+-+CANALS+I+PORTS+DE+BARCELONA!5e0!3m2!1ses!2ses!4v1447324319010" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+
+    <!-- register Section -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+          <!--      <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="http://twitter.com/CIT_UPC" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/cit.upc" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="http://www.linkedin.com/groups/CIT-UPC-4232562" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- register Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>
